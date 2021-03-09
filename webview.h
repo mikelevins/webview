@@ -1098,8 +1098,8 @@ private:
   };
 
   HRESULT createEnvironment(const std::wstring &userDataFolder,
-                           const std::wstring &currentExeNameW,
-                           webview2_com_handler *webview2ComHandler) const {
+                            const std::wstring &currentExeNameW,
+                            webview2_com_handler *webview2ComHandler) const {
     return CreateCoreWebView2EnvironmentWithOptions(
         nullptr, (userDataFolder + L"/" + currentExeNameW).c_str(), nullptr,
         webview2ComHandler);
